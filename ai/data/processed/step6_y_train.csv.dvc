@@ -1,0 +1,5 @@
+outs:
+- md5: 93d115374545e6b3ceb80f5aa023e357
+  size: 20099
+  hash: md5
+  path: step6_y_train.csv

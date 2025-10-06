@@ -1,0 +1,5 @@
+outs:
+- md5: b8a7c90f138246a480f3fba6e4397bf4
+  size: 2888
+  hash: md5
+  path: step6_y_new.csv

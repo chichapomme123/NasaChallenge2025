@@ -1,0 +1,8 @@
+/step6_X_train.csv
+/step6_X_test.csv
+/step6_X_val.csv
+/step6_X_new.csv
+/step6_y_new.csv
+/step6_y_test.csv
+/step6_y_val.csv
+/step6_y_train.csv

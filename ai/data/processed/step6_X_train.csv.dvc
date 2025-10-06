@@ -1,0 +1,5 @@
+outs:
+- md5: 29c518efe65b8372a84ec3db974d2a5e
+  size: 1702075
+  hash: md5
+  path: step6_X_train.csv

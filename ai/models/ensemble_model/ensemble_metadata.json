@@ -1,0 +1,28 @@
+{
+    "models_used": [
+        "catboost",
+        "lightgbm"
+    ],
+    "model_weights": {
+        "catboost": 0.5,
+        "lightgbm": 0.5
+    },
+    "test_samples": 957,
+    "metrics": {
+        "accuracy": 0.7795193312434692,
+        "precision": 0.7903861611011157,
+        "recall": 0.7795193312434692,
+        "f1_macro": 0.7542256817386134,
+        "f1_weighted": 0.7836364030413309
+    },
+    "individual_models": [
+        {
+            "model": "catboost",
+            "accuracy": 0.7784743991640544
+        },
+        {
+            "model": "lightgbm",
+            "accuracy": 0.7753396029258098
+        }
+    ]
+}

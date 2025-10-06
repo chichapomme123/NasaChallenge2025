@@ -1,0 +1,4 @@
+class_name,label
+FALSE POSITIVE,0
+CANDIDATE,1
+CONFIRMED,2

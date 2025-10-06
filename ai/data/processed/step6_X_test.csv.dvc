@@ -1,0 +1,5 @@
+outs:
+- md5: 67ab38d76f9fcbffc384a4cf1dee367f
+  size: 243357
+  hash: md5
+  path: step6_X_test.csv

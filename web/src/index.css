@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Make sure the page background lets the canvas show */
+html, body, #root {
+  height: 100%;
+  background: transparent;
+  overflow-x: hidden; /* keep horizontal clean */
+  overflow-y: auto;   /* allow vertical scroll */
+}
+
+/* === Exoplanet Intro – Scene 1 animations === */
+@keyframes planet-pass {
+  0%   { transform: translateX(120%) translateY(-10px); }
+  50%  { transform: translateX(-10%) translateY(0px); }
+  100% { transform: translateX(-120%) translateY(10px); }
+}
+
+@keyframes soft-pulse {
+  0%, 100% { opacity: 0.85; filter: blur(28px); }
+  50%      { opacity: 1;    filter: blur(34px); }
+}
+
+@keyframes star-sparkle {
+  0%, 100% { opacity: .35; transform: scale(1); }
+  50%      { opacity: .7;  transform: scale(1.05); }
+}
+
+@keyframes fadeInSoft {
+  0%   { opacity: 0; filter: blur(8px); transform: translateY(8px); }
+  100% { opacity: 1; filter: blur(0);   transform: translateY(0);   }
+}
+@keyframes fadeOutSoft {
+  0%   { opacity: 1; filter: blur(0);   transform: translateY(0);   }
+  100% { opacity: 0; filter: blur(10px); transform: translateY(-6px); }
+}
+
+/* utilitaires tailwind-friendly */
+.animate-fade-in-soft  { animation: fadeInSoft 700ms ease-out forwards; }
+.animate-fade-out-soft { animation: fadeOutSoft 700ms ease-in forwards; }
+
+/* ==== Custom dropdown style for Training.jsx ==== */
+select, option {
+  background-color: #1a0b2e; /* violet/noir profond */
+  color: white;
+  border: 1px solid #5a2d82;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+select:focus, option:hover {
+  background-color: #2a0e4a;
+  color: #fff;
+}
+
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: #5a2d82;
+  border-radius: 10px;
+}
